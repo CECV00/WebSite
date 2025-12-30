@@ -2,126 +2,256 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact & Chat</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/svg+xml" href="images/Logo.jpeg" />
+    <title>Líderes en Prevención.</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div id="app">
-      <header class="header">
-        <div class="container">
-          <h1><i class="fas fa-comments"></i> Contact & Chat</h1>
-          <p>Get in touch with us through our contact form or chat directly on WhatsApp</p>
+    <div class="page-wrapper">
+      <header>
+        <div class="container-flex">
+          <div class="col"><img src="images/Logo.jpeg" alt="Logo" width="150px" class="logo" /></div>
+          <div class="nav-header-bar">
+            <ul class="nav-menu">
+              <li><a href="/index.html#contactForm">Contacto</a></li>
+              <li><a href="/index.html#about">Nosotros</a></li>
+              <li><a href="/services.html">Servicios</a></li>
+            </ul>
+            </nav>
+          </div>
         </div>
       </header>
-
-      <main class="main">
+      <!-- slideshow section -->
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Slides -->
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active carousel-image bg-img-1">
+            <div class="carousel-caption">
+              <h3 id="about">Sobre mí</h3>
+              <p> Soy psicóloga especialista en gerencia de seguridad y salud en el trabajo, con más de 10 años de experiencia en diferentes actividades económicas a nivel país. Se han acompañado a más de 1.000 micro empresarios y guiado en el cumplimiento de la normatividad vigente en el sistema de gestión de la seguridad y salud en el trabajo. </p>
+              <p> Cuento con experiencia en el cumplimiento de las disposiciones legales del Ministerio de trabajo, secretarías de salud, Administradoras de riesgos laborales y demás entidades gubernamentales regulatorias. </p>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item carousel-image bg-img-2">
+            <div class="carousel-caption">
+              <h3>Natalia Forero</h3>
+              <h4>Líderes en prevención</h4>
+              <p> Este servicio nace a partir de la necesidad que enfrentan las pequeñas empresas de cumplir con los requisitos legales del sistema de Gestión de Seguridad y Salud en el Trabajo (SG-SST), brindando soluciones prácticas, eficientes y adaptadas a su realidad operativa. </p>
+              <p> Con una sólida presencia en el Valle del Cauca y en Bogotá, Cundinamarca, hemos consolidado relaciones comerciales estables con más de 45 empresas. Durante más de una década, hemos aportado valor a más de 1000 empresarios, fortaleciendo su gestión y cumplimiento normativo. </p>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-item carousel-image bg-img-3">
+            <div class="carousel-caption">
+              <h3>Nuestros Servicios:</h3>
+              <h4>Ofrecemos soluciones integrales para su organización:</h4>
+              <ul>
+                <li>Enfocadas en empresarios de Pymes.</li>
+                <li>Servicio profesional y personalizado.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+      <!-- Slideshow Section -->
+      <main>
+        <div id="title-section-container">
+          <h2 class="section-title">¿Qué ofrecemos?</h2>
+          <p>Soluciones integrales en Seguridad y Salud en el Trabajo, medio ambiente y calidad para su organización.</p>
+        </div>
+        <div class="album py-5 bg-body-tertiary">
+          <div class="container">
+            <!-- Contenedor del carousel horizontal -->
+            <div class="carousel-scroll">
+              <div class="card shadow-sm">
+                <img src="images/thumbnail1.jpeg" class="card-img-top" height="300">
+                <div class="card-body">
+                  <ul class="text-list">
+                    <li>Aplicacion de bateria riesgo psicosocial.</li>
+                    <li>Evaluación de carga mental.</li>
+                    <li>Sistema de vigilancia epidemiológica psicosocial.</li>
+                    <li>Campañas de bienestar.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card shadow-sm">
+                <img src="images/thumbnail2.jpeg" class="card-img-top" height="300">
+                <div class="card-body">
+                  <ul class="text-list">
+                    <li>Apoyo en campañas de salud.</li>
+                    <li>Tramitar permisos horas extras al ministerio de trabajo.</li>
+                    <li>Reportes de estandares minimos del SG-SST.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card shadow-sm">
+                <img src="images/Page11.jpeg" class="card-img-top" height="300">
+                <div class="card-body">
+                  <ul class="text-list">
+                    <li>Diseño e implementación del SG-SST.</li>
+                    <li>Auditoria interna Sistemas de gestión integrados.</li>
+                    <li>Apoyo en investigaciones de accidentes de trabajo leves y graves del Diseño e implementación del SG-SST.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card shadow-sm">
+                <div class="image-wrapper">
+                  <img src="images/thumbnail4.jpeg" class="card-img-top" height="300" id="image_censored">
+                  <div class="blur-circle"></div>
+                </div>
+                <div class="card-body">
+                  <ul class="text-list">
+                    <li>Diseño de planes de preparación, prevención y atención ante respuesta.</li>
+                    <li>Apoyo en las capacitaciones de evacuación, primeros auxilios y control de incendios.</li>
+                    <li>Apoyo en simulacros.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card shadow-sm">
+                <img src="images/thumbnail6.jpeg" class="card-img-top" height="300">
+                <div class="card-body">
+                  <ul class="text-list">
+                    <li>Jornadas de bailoterapias.</li>
+                    <li>Acompañamiento a pausas activas dinámicas.</li>
+                    <li>Sistema de vigilancia epidemiológica.</li>
+                    <li>Consultoría del PESV (plan estratégico de seguridad vial).</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="container">
           <div class="features-grid">
             <!-- Contact Form Section -->
             <section class="feature-card">
               <div class="feature-header">
-                <i class="fas fa-envelope"></i>
-                <h2>Contact Form</h2>
+                <i class="fa fa-envelope"></i>
+                <h2 id="contactForm">Formulario de contacto.</h2>
               </div>
-              <p class="feature-description">Send us a message and we'll get back to you as soon as possible.</p>
-              
-              <form id="contactForm" class="contact-form">
+              <p class="feature-description">Envianos un mensaje a nuestro correo, te respondemos lo más rápido posible.</p>
+              <form action="https://formsubmit.co/comercial@lideresenprevencion.com" method="POST" class="contact-form">
                 <div class="form-group">
-                  <label for="name">Full Name</label>
-                  <input type="text" id="name" name="name" required>
+                  <label for="name">Nombre Completo</label>
+                  <input type="text" id="name" name="nombre_completo" required>
                 </div>
                 <div class="form-group">
-                  <label for="name">Company</label>
-                  <input type="text" id="name" name="name" required>
+                  <label for="name">Empresa</label>
+                  <input type="text" id="name" name="empresa" required>
                 </div>
                 <div class="form-group">
-                  <label for="email">Email Address</label>
-                  <input type="email" id="email" name="email" required>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email_usuario" required>
                 </div>
-                
                 <div class="form-group">
-                  <label for="phone">Phone Number</label>
-                  <input type="tel" id="phone" name="phone">
+                  <label for="phone">Número de Teléfono</label>
+                  <input type="tel" id="phone" name="phone" required>
                 </div>
-                
                 <div class="form-group">
-                  <label for="subject">Subject</label>
+                  <label for="subject">Asunto</label>
                   <select id="subject" name="subject" required>
-                    <option value="">Select a subject</option>
-                    <option value="general">General Inquiry</option>
-                    <option value="support">Technical Support</option>
-                    <option value="business">Business Partnership</option>
-                    <option value="feedback">Feedback</option>
+                    <option value="">Selecciona un asunto</option>
+                    <option value="general">Consulta General</option>
+                    <option value="support">Soporte Técnico</option>
+                    <option value="business">Asociación Comercial</option>
+                    <option value="feedback">Comentarios</option>
                   </select>
                 </div>
-                
                 <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help you..."></textarea>
+                  <label for="message">Mensaje</label>
+                  <textarea id="message" name="mensaje" rows="5" required placeholder="Cuéntanos cómo podemos ayudarte..." aria-setsize="false"></textarea>
                 </div>
-                
                 <button type="submit" class="btn btn-primary">
-                  <i class="fas fa-paper-plane"></i>
-                  Send Message
-                </button>
+                  <i class="fas fa-paper-plane"></i> Enviar Mensaje </button>
               </form>
-              
               <div id="formStatus" class="form-status"></div>
             </section>
-
             <!-- WhatsApp Chat Section -->
             <section class="feature-card">
               <div class="feature-header">
-                <i class="fab fa-whatsapp"></i>
+                <i class="fa fa-whatsapp"></i>
                 <h2>WhatsApp Chat</h2>
               </div>
-              <p class="feature-description">Chat with us instantly on WhatsApp for quick responses and real-time support.</p>w
-              
-              <div class="whatsapp-options">
-                <div class="chat-option">
-                  <h3>Quick Chat</h3>
-                  <p>Start a conversation immediately</p>
-                  <button id="quickChatBtn" class="btn btn-whatsapp">
-                    <i class="fab fa-whatsapp"></i>
-                    Start Quick Chat
-                  </button>
-                </div>
-                
-                <div class="chat-option">
-                  <h3>Custom Message</h3>
-                  <p>Send a personalized message</p>
-                  <div class="custom-message-form">
-                    <textarea id="whatsappMessage" placeholder="Type your message here..." rows="3"></textarea>
-                    <button id="customChatBtn" class="btn btn-whatsapp">
-                      <i class="fab fa-whatsapp"></i>
-                      Send via WhatsApp
-                    </button>
-                  </div>
+              <div class="chat-option">
+                <div class="custom-message-form">
+                  <img src="/images/frame.png" alt="Avatar" class="avatar" height="680px">
                 </div>
               </div>
-              
-              <div class="whatsapp-info">
-                <p><strong>Business Hours:</strong> Mon-Fri 9AM-6PM</p>
-                <p><strong>Response Time:</strong> Usually within 5 minutes</p>
-              </div>
-            </section>
           </div>
+          </section>
         </div>
-      </main>
-
-      <!-- Floating WhatsApp Button -->
-      <div id="floatingWhatsApp" class="floating-whatsapp">
-        <i class="fab fa-whatsapp"></i>
-      </div>
-
-      <footer class="footer">
-        <div class="container">
-          <p>&copy; 2025 Contact & Chat. All rights reserved.</p>
-        </div>
-      </footer>
     </div>
-    <script type="module" src="/main.js"></script>
+    </main>
+    <!-- Floating WhatsApp Button -->
+    <div class="avatar-container">
+      <a href="https://wa.me/573015174786" target="_blank">
+        <img src="images/eco_lion_sst.jpeg" alt="WhatsApp" width="150px" height="150px">
+      </a>
+      <div class="chat-bubble">
+        <p>
+          <marquee loop="infinite" width="200px" direction="left">Primer consultoria gratis. ¡Contáctanos Ya!</marquee>
+        </p>
+      </div>
+    </div>
+    <div id="floatingWhatsApp" class="floating-whatsapp">
+      <i class="fa fa-whatsapp"></i>
+    </div>
+    </main>
+    <footer class="footer">
+      <div class="info">
+        <div class="details">
+          <ul class="footer-links">
+            <li>
+              <a href="/index.html#contactForm">Contacto</a>
+            </li>
+            <li>
+              <a href="/services.html">Servicios</a>
+            </li>
+            <li>
+              <a href="/index.htmla#about">Nosotros</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links details">
+          <ul>
+            <li>
+              <a href="/policy.html">Política de Privacidad</a>
+            </li>
+            <li>
+              <a href="/terms.html">Términos y Condiciones</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links contact">
+          <ul>
+            <li> +57 301 5174786</li>
+            <li> comercial@lideresenprevencion.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-end">
+        <section class="content-footer">
+          <p>&copy; 2025 Contact & Chat. All rights reserved.</p>
+          <p>Developed by Wizard Soft</p>
+        </section>
+      </div>
+    </footer>
+    </div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
 </html>
